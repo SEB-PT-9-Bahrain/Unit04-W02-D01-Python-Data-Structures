@@ -88,3 +88,36 @@ print(students[1:5:3])
 
 print(students[0::2])
 print(students[:4:6])
+
+print('---------------')
+# Dictionary
+
+ga_student = {
+    "name":"Ammar",
+    "course":"SEB",
+    "favorite_language":"Angular"
+}
+
+
+print(ga_student['favorite_language'])
+
+# editing a key value pair
+ga_student['favorite_language'] = 'Python'
+
+print(ga_student)
+
+# Add a new key value pair
+ga_student['cpr_number'] = 8793679653479
+
+
+print(ga_student)
+
+# deletes a key value pair
+del ga_student['course']
+
+
+print(ga_student)
+
+
+for key, value in ga_student.items():
+    print(f'{key} ----> {value}')
